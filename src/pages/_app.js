@@ -7,6 +7,7 @@ import { FullPageLoader } from "@/components/Loader";
 import { useRouteChangeHandler } from "hooks/useRouteChangeHandler";
 import GlobalMetaTags from "@/components/app/GlobalMetaTags";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/next";
 import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
@@ -128,6 +129,7 @@ export default function MyApp({ Component, pageProps }) {
         />
       </Head>
       {renderContent()}
+      <Analytics />
     </Provider>
   );
 }
