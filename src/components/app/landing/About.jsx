@@ -85,15 +85,19 @@ export default function About() {
           <HStack gap={10} color="primary">
             <Stat.Root>
               <Stat.ValueText>6K+</Stat.ValueText>
-              <Stat.Label>Houses Available</Stat.Label>
+              <Stat.Label aria-label="Available Houses">
+                Houses Available
+              </Stat.Label>
             </Stat.Root>
             <Stat.Root>
               <Stat.ValueText>4K+</Stat.ValueText>
-              <Stat.Label>Houses Sold</Stat.Label>
+              <Stat.Label aria-label="Houses Sold">Houses Sold</Stat.Label>
             </Stat.Root>
             <Stat.Root>
               <Stat.ValueText>1K+</Stat.ValueText>
-              <Stat.Label>Trusted Agents</Stat.Label>
+              <Stat.Label aria-label="Trusted Agents">
+                Trusted Agents
+              </Stat.Label>
             </Stat.Root>
           </HStack>
         </Stack>

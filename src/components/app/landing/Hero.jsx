@@ -86,7 +86,12 @@ export default function Hero() {
             ₦
           </Span>
         </Button>
-        <IconButton ml={{ base: 0, md: 2 }} bg="primary" size="sm">
+        <IconButton
+          aria-label="Search"
+          ml={{ base: 0, md: 2 }}
+          bg="primary"
+          size="sm"
+        >
           <BiSearch />
         </IconButton>
       </HStack>

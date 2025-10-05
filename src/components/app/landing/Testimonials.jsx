@@ -7,48 +7,49 @@ import {
   Avatar,
   Stack,
   HStack,
+  IconButton,
 } from "@chakra-ui/react";
 import H2Heading from "./H2Heading";
 import { SlideIn } from "@/components/Animations";
-import HeadingMarker from "./HeadingMarker";
-import { StarFill } from "react-bootstrap-icons";
+import { ChevronLeft, ChevronRight, StarFill } from "react-bootstrap-icons";
 import { useCallback } from "react";
+import Image from "next/image";
 
 export default function Testimonials() {
   const TESTIMONIALS = [
     {
-      avatar: "images/dentist-portrait.webp",
-      name: "Dr. Emily Carter",
-      business: "Owner, BrightSmile",
-
+      avatar: "images/client-2.png",
+      imgURL: "/images/location-1.png",
+      name: "Sarah Nguyen",
+      residence: "Yola, Adamawa",
       comment:
-        "Our new website doubled our appointment bookings within weeks — clean design and easy booking for patients.",
+        "Lumina truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.",
     },
     {
-      avatar: "images/event-planner-agent.webp",
-      name: "Ahmed Bashir",
-      business: "Event Planner",
-
+      avatar: "images/client-1.webp",
+      imgURL: "/images/location-2.png",
+      name: "Michael Rodriguez",
+      residence: "Nasarawa, Kano",
       comment:
-        "They redesigned my website beautifully — inquiries and event bookings jumped almost immediately after launch!",
-    },
-
-    {
-      avatar: "images/salon-owner.webp",
-      name: "Grace Oko",
-      business: "Owner, Glow Salon",
-
-      comment:
-        "They created a stylish, mobile-friendly website for my salon — clients now book appointments faster and easier than ever.",
+        "I had a fantastic experience working with Lumina. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!",
     },
 
     {
-      avatar: "images/restaurant-owner.webp",
-      name: "Sofia Adeniyi",
-      business: "Restaurant Owner",
-
+      avatar: "images/client-3.png",
+      imgURL: "/images/location-3.png",
+      name: "Emily Johnson",
+      residence: "Abuja, FCT",
       comment:
-        "My restaurant's online orders doubled after they designed our website with an easy-to-use menu and order form.",
+        "Lumina made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!",
+    },
+
+    {
+      avatar: "images/client-4.png",
+      imgURL: "/images/location-1.png",
+      name: "Sara Arden",
+      residence: "Ikeja, Lagos",
+      comment:
+        "I had an excellent experience with Lumina. Their knowledge and tailored support went beyond my expectations. The process of finding my dream home was fast and seamless. Strongly recommended.",
     },
   ];
 
@@ -71,90 +72,132 @@ export default function Testimonials() {
       px={{ base: 4, md: 10 }}
     >
       <Container maxW="container.lg" p="0">
-        <Stack align={"center"} px={3}>
-          <Box>
-            <HeadingMarker text="testimonials" />
-            <H2Heading>What Clients Say</H2Heading>
-          </Box>
+        <Stack color="primary" align={"center"}>
+          <H2Heading mb={0}>Cleint Feedback</H2Heading>
+          <Text
+            mb={12}
+            textAlign={"center"}
+            w={{ base: "full", md: "70%" }}
+            lineHeight={1.7}
+          >
+            See what our clients have shared about their experiences and the
+            results they achieved with us
+          </Text>
         </Stack>
         <SimpleGrid px={2} columns={[1, 1, 2, 4]} gap={{ base: 8, md: 10 }}>
-          {TESTIMONIALS.map(({ name, avatar, business, comment }, index) => (
-            <Box
-              key={`review-${index}`}
-              bg={"secondary"}
-              color="baseLight"
-              p={6}
-              rounded="3xl"
-              shadow="xl"
-              textAlign="center"
-              transition="all 0.5s"
-              _hover={{ shadow: "xl", transform: "translateY(-6px)" }}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-            >
-              <SlideIn>
-                <HStack gap={4} mb={2} align={"center"}>
-                  <Avatar.Root
-                    width={50}
-                    height={50}
-                    p={1}
-                    overflow={"hidden"}
-                    rounded={"100"}
-                    bgGradient="to-r"
-                    gradientFrom="#08CB00"
-                    gradientTo="blue.200"
-                  >
-                    <Avatar.Fallback name={name} />
-                    <Avatar.Image
-                      objectPosition={"top"}
-                      objectFit={"cover"}
-                      src={avatar}
-                      alt={business}
-                    />
-                  </Avatar.Root>
-
-                  <Stack>
-                    <Heading
-                      as="h3"
-                      fontWeight={"normal"}
-                      lineHeight={1.2}
-                      fontSize="md"
-                      textAlign={"left"}
-                      truncate
-                    >
-                      {name}
-                    </Heading>
-
-                    <Text
-                      color={"#d7d7d7"}
-                      lineHeight={1.2}
-                      fontSize={".9em"}
-                      textAlign={"left"}
-                    >
-                      {business}
-                    </Text>
-                  </Stack>
-                </HStack>
-                <HStack gap={2} mt={5}>
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <StarFill color="gold" key={`rate-${i}`} />
-                  ))}
-                </HStack>
-                <Text
-                  mt={4}
-                  fontSize={"1em"}
-                  color="#d7d7d7"
-                  textAlign={"left"}
-                  lineHeight={"1.9"}
-                  lineClamp={{ md: 7 }}
+          {TESTIMONIALS.map(
+            ({ name, avatar, residence, imgURL, comment }, index) => (
+              <Box
+                key={`review-${index}`}
+                bg={"secondary"}
+                color="primary"
+                p={6}
+                rounded="2xl"
+                shadow="xl"
+                textAlign="center"
+                transition="all 0.5s"
+                _hover={{ shadow: "xl", transform: "translateY(-6px)" }}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+              >
+                <Box
+                  position="relative"
+                  overflow="hidden"
+                  rounded={"xl"}
+                  mb={5}
+                  width={"full"}
+                  maxH={{ base: "160px", md: "110px" }}
+                  minHeight={{ base: "160px", md: "110px" }}
                 >
-                  {comment}
-                </Text>
-              </SlideIn>
-            </Box>
-          ))}
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "top",
+                    }}
+                    priority
+                    fill
+                    sizes="100%"
+                    src={imgURL}
+                    alt={residence}
+                  />
+                </Box>
+                <SlideIn>
+                  <HStack gap={4} mb={2} align={"center"}>
+                    <Avatar.Root
+                      width={50}
+                      height={50}
+                      overflow={"hidden"}
+                      rounded={"100"}
+                    >
+                      <Avatar.Fallback name={name} />
+                      <Avatar.Image
+                        objectPosition={"top"}
+                        objectFit={"cover"}
+                        src={avatar}
+                        alt={residence}
+                      />
+                    </Avatar.Root>
+
+                    <Stack>
+                      <Heading
+                        as="h3"
+                        fontWeight={"semibold"}
+                        lineHeight={1.2}
+                        fontSize="md"
+                        textAlign={"left"}
+                        truncate
+                      >
+                        {name}
+                      </Heading>
+                      <Text
+                        lineHeight={1.2}
+                        fontSize={".9em"}
+                        textAlign={"left"}
+                      >
+                        {residence}
+                      </Text>
+                    </Stack>
+                  </HStack>
+                  <HStack gap={2} mt={5}>
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <StarFill color="brown" key={`rate-${i}`} />
+                    ))}
+                  </HStack>
+                  <Text
+                    mt={4}
+                    fontSize={"1em"}
+                    textAlign={"left"}
+                    lineHeight={"1.9"}
+                    lineClamp={{ md: 7 }}
+                  >
+                    {comment}
+                  </Text>
+                </SlideIn>
+              </Box>
+            )
+          )}
         </SimpleGrid>
       </Container>
+      <HStack gap={8} align={"center"} justify={"center"} mt={14} w="full">
+        <IconButton
+          size="lg"
+          rounded="full"
+          bg="primary"
+          aria-label="Previous"
+          shadow={"lg"}
+        >
+          <ChevronLeft />
+        </IconButton>
+        <IconButton
+          size="lg"
+          rounded="full"
+          bg="primary"
+          aria-label="Next"
+          shadow={"lg"}
+        >
+          <ChevronRight />
+        </IconButton>
+      </HStack>
     </Box>
   );
 }

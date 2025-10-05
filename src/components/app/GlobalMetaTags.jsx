@@ -5,7 +5,7 @@ export default function GlobalMetaTags() {
     <DefaultSeo
       defaultTitle="Lumina Properties Nigeria - Buy, Sell & Rent Real Estate"
       description="Lumina Properties Nigeria helps you find your dream home, investment property, or rental apartment. Explore verified listings of houses, lands, and commercial real estate across Nigeria."
-      canonical="https://luminaproperties.com.ng/"
+      canonical="https://luminaproperties.com/"
       additionalMetaTags={[
         {
           name: "keywords",
@@ -49,20 +49,20 @@ export default function GlobalMetaTags() {
       ]}
       openGraph={{
         type: "website",
-        url: "https://luminaproperties.com.ng/",
+        url: "https://luminaproperties.com/",
         title: "Lumina Properties Nigeria - Buy, Sell & Rent Real Estate",
         description:
           "Discover houses, apartments, lands, and commercial real estate across Nigeria. Buy, sell, or rent with confidence through Lumina Properties Nigeria.",
         locale: "en_NG",
         images: [
           {
-            url: "https://luminaproperties.com.ng/images/real-estate-cover.png",
+            url: "https://luminaproperties.com/images/hero-img.png",
             width: 1200,
             height: 630,
             alt: "Lumina Properties Nigeria - Real Estate Listings",
           },
           {
-            url: "https://luminaproperties.com.ng/images/real-estate-cover.png",
+            url: "https://luminaproperties.com/images/hero-img.png",
             width: 2400,
             height: 1260,
             alt: "Lumina Properties Nigeria - Real Estate Listings",

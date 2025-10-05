@@ -6,7 +6,6 @@ const config = defineConfig({
       colors: {
         primary: { value: "#2B1B12" }, // Neon Byte – CTAs, highlights, accents
         secondary: { value: "#DDC7BB" }, // Terminal Depth – dark sections / backgrounds
-        neutralDark: { value: "#000000" }, // Core Black – text, logo
         baseLight: { value: "#FBF5F1" }, // Soft Light – light sections / cards
       },
     },
