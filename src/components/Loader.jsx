@@ -1,10 +1,10 @@
 import { Center } from "@chakra-ui/react";
-import { FadeLoader, DotLoader } from "react-spinners";
+import { FadeLoader, RiseLoader } from "react-spinners";
 
 export const Loader = (props) => {
   return (
     <Center as="div" height={{ base: "70vh", md: "60vh" }} overflow={"hidden"}>
-      <DotLoader color={props.color || "#08CB00"} size={props.size || 35} />
+      <RiseLoader color={props.color || "#2B1B12"} size={props.size || 35} />
     </Center>
   );
 };
@@ -24,7 +24,7 @@ export const FullPageLoader = (props) => {
       overflow={"hidden"}
       bg="white"
     >
-      <DotLoader color={props.color || "#08CB00"} size={props.size || 50} />
+      <RiseLoader color={props.color || "#2B1B12"} size={props.size || 50} />
     </Center>
   );
 };

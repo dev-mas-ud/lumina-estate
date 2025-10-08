@@ -3,7 +3,6 @@ import Image from "next/image";
 import H2Heading from "./H2Heading";
 import { SlideIn } from "@/components/Animations";
 import { useCallback, useState } from "react";
-import { Github, Instagram, Linkedin, TwitterX } from "react-bootstrap-icons";
 
 export default function About() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);

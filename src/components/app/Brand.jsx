@@ -11,6 +11,7 @@ export default function Brand({
       outline={"none"}
       textDecoration={"none"}
       tabIndex={-1}
+      color="primary"
       href="/"
       fontWeight={"bold"}
       fontSize={"1.5em"}
