@@ -73,7 +73,7 @@ export default function Testimonials() {
     >
       <Container maxW="container.lg" p="0">
         <Stack color="primary" align={"center"}>
-          <H2Heading mb={0}>Cleint Feedback</H2Heading>
+          <H2Heading mb={0}>Client Feedback</H2Heading>
           <Text
             mb={12}
             textAlign={"center"}
