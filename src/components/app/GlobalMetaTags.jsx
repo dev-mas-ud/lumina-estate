@@ -5,7 +5,7 @@ export default function GlobalMetaTags() {
     <DefaultSeo
       defaultTitle="Lumina Properties Nigeria - Buy, Sell & Rent Real Estate"
       description="Lumina Properties Nigeria helps you find your dream home, investment property, or rental apartment. Explore verified listings of houses, lands, and commercial real estate across Nigeria."
-      canonical="https://luminaproperties.com/"
+      canonical="https://lumina-estate.vercel.app/"
       additionalMetaTags={[
         {
           name: "keywords",
@@ -49,7 +49,7 @@ export default function GlobalMetaTags() {
       ]}
       openGraph={{
         type: "website",
-        url: "https://luminaproperties.com/",
+        url: "https://lumina-estate.vercel.app/",
         title: "Lumina Properties Nigeria - Buy, Sell & Rent Real Estate",
         description:
           "Discover houses, apartments, lands, and commercial real estate across Nigeria. Buy, sell, or rent with confidence through Lumina Properties Nigeria.",

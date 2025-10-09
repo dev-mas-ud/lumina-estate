@@ -18,9 +18,9 @@ import Image from "next/image";
 export default function Testimonials() {
   const TESTIMONIALS = [
     {
-      avatar: "images/client-2.png",
+      avatar: "images/client-2.webp",
       imgURL: "/images/location-1.png",
-      name: "Sarah Nguyen",
+      name: "Ibrahim Bello",
       residence: "Yola, Adamawa",
       comment:
         "Lumina truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.",
@@ -28,25 +28,25 @@ export default function Testimonials() {
     {
       avatar: "images/client-1.webp",
       imgURL: "/images/location-2.png",
-      name: "Michael Rodriguez",
+      name: "Tunde Balogun",
       residence: "Nasarawa, Kano",
       comment:
         "I had a fantastic experience working with Lumina. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!",
     },
 
     {
-      avatar: "images/client-3.png",
+      avatar: "images/client-3.webp",
       imgURL: "/images/location-3.png",
-      name: "Emily Johnson",
+      name: "Chinedu Okafor",
       residence: "Abuja, FCT",
       comment:
         "Lumina made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!",
     },
 
     {
-      avatar: "images/client-4.png",
+      avatar: "images/client-4.webp",
       imgURL: "/images/location-1.png",
-      name: "Sara Arden",
+      name: "Emeka Adeyemi",
       residence: "Ikeja, Lagos",
       comment:
         "I had an excellent experience with Lumina. Their knowledge and tailored support went beyond my expectations. The process of finding my dream home was fast and seamless. Strongly recommended.",

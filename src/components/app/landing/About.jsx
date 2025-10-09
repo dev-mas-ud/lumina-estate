@@ -23,7 +23,7 @@ export default function About() {
       as="section"
       py={{ base: 16, md: 14 }}
       pt={{ base: 4, md: 14 }}
-      px={{ base: 7, md: 32 }}
+      px={{ base: 7, md: 10, lg: 32 }}
       position="relative"
       overflow="hidden"
     >
