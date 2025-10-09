@@ -1,4 +1,12 @@
-import { Box, Link, Stack, Heading, Text, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Link,
+  Stack,
+  Heading,
+  Text,
+  SimpleGrid,
+  Span,
+} from "@chakra-ui/react";
 import { Facebook, Instagram, Threads, TwitterX } from "react-bootstrap-icons";
 
 export default function Footer() {
@@ -85,7 +93,20 @@ export default function Footer() {
         textAlign="center"
         fontSize="sm"
       >
-        © {new Date().getFullYear()} Lumina. All rights reserved.
+        © {new Date().getFullYear()} Lumina. All rights reserved. |{" "}
+        <Span>
+          Developed by{" "}
+          <Link
+            color="primary"
+            textDecoration={"underline"}
+            target="_blank"
+            fontWeight={"semibold"}
+            rel="noopener noreferrer"
+            href="https://websitesbymasud.vercel.app/"
+          >
+            Masud
+          </Link>
+        </Span>
       </Box>
     </Box>
   );
