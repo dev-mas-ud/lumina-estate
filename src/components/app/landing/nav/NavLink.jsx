@@ -59,6 +59,7 @@ const NavLink = ({ children, href, color, target, isOpen }) => {
       e.preventDefault();
       setIsNavigating(true);
       router.push(basePath);
+
       setTimeout(() => {
         const [, hash] = href.split("#");
         scrollToHash(`#${hash}`);
