@@ -1,12 +1,4 @@
-import {
-  Box,
-  Link,
-  Stack,
-  Heading,
-  Text,
-  SimpleGrid,
-  Span,
-} from "@chakra-ui/react";
+import { Box, Link, Stack, Heading, Text, SimpleGrid } from "@chakra-ui/react";
 import { Facebook, Instagram, Threads, TwitterX } from "react-bootstrap-icons";
 
 export default function Footer() {
@@ -50,9 +42,8 @@ export default function Footer() {
   ];
 
   return (
-    <Box bg="secondary" color="primary" py={10} px={{ base: 4, md: 8 }}>
+    <Box bg="secondary" color="primary" py={10} pb={5} px={{ base: 4, md: 8 }}>
       <SimpleGrid columns={{ base: 2, md: 5 }} gap={{ base: 8, md: 12 }}>
-        {/* Brand */}
         <Stack gap={3}>
           <Heading as="h3" fontSize="lg" fontWeight="bold">
             Lumina
@@ -62,7 +53,6 @@ export default function Footer() {
           </Text>
         </Stack>
 
-        {/* Sections */}
         {sections.map((section) => (
           <Stack key={section.title} gap={3}>
             <Heading as="h4" fontSize="md">
@@ -87,26 +77,26 @@ export default function Footer() {
       </SimpleGrid>
       <Box
         borderTop="1px solid"
-        borderColor="primary"
+        borderColor="gray.700"
         mt={10}
         pt={4}
         textAlign="center"
         fontSize="sm"
       >
-        © {new Date().getFullYear()} Lumina. All rights reserved. |{" "}
-        <Span>
-          Developed by{" "}
-          <Link
-            color="primary"
-            textDecoration={"underline"}
-            target="_blank"
-            fontWeight={"semibold"}
-            rel="noopener noreferrer"
-            href="https://websitesbymasud.vercel.app/"
-          >
-            Masud
-          </Link>
-        </Span>
+        © {new Date().getFullYear()} Lumina. All rights reserved.
+      </Box>
+      <Box textAlign={"center"} mt={2} fontSize={"sm"}>
+        Developed by{" "}
+        <Link
+          color="primary"
+          textDecoration={"underline"}
+          target="_blank"
+          fontWeight={"semibold"}
+          rel="noopener noreferrer"
+          href="https://websitesbymasud.vercel.app/"
+        >
+          Masud
+        </Link>
       </Box>
     </Box>
   );

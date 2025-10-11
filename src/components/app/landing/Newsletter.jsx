@@ -9,13 +9,7 @@ import {
   InputGroup,
 } from "@chakra-ui/react";
 import H2Heading from "./H2Heading";
-import {
-  Chat,
-  Envelope,
-  QuestionCircle,
-  Send,
-  SendFill,
-} from "react-bootstrap-icons";
+import { Chat, Envelope, QuestionCircle, Send } from "react-bootstrap-icons";
 
 export default function Newsletter() {
   return (
@@ -50,7 +44,6 @@ export default function Newsletter() {
         <InputGroup w="20rem" startElement={<Envelope />}>
           <Input type="email" size="lg" placeholder="Enter your email adress" />
         </InputGroup>
-
         <Button bg="primary" size="md">
           <Send /> Submit
         </Button>

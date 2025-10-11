@@ -33,7 +33,6 @@ export default function Testimonials() {
       comment:
         "I had a fantastic experience working with Lumina. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!",
     },
-
     {
       avatar: "images/client-3.webp",
       imgURL: "/images/location-3.png",

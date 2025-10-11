@@ -14,7 +14,7 @@ const NavLink = ({ children, href, color, target, isOpen }) => {
 
   const defaultColor = color || "primary";
   const hoverColor = "secondary";
-  const activeColor = "secondary";
+  const activeColor = hoverColor;
 
   const [isNavigating, setIsNavigating] = useState(false);
 
