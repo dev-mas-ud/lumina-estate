@@ -19,7 +19,7 @@ export default function Testimonials() {
   const TESTIMONIALS = [
     {
       avatar: "images/client-2.webp",
-      imgURL: "/images/location-1.png",
+      imgURL: "/images/location-1.webp",
       name: "Ibrahim Bello",
       residence: "Yola, Adamawa",
       comment:
@@ -27,7 +27,7 @@ export default function Testimonials() {
     },
     {
       avatar: "images/client-1.webp",
-      imgURL: "/images/location-2.png",
+      imgURL: "/images/location-2.webp",
       name: "Tunde Balogun",
       residence: "Nasarawa, Kano",
       comment:
@@ -35,7 +35,7 @@ export default function Testimonials() {
     },
     {
       avatar: "images/client-3.webp",
-      imgURL: "/images/location-3.png",
+      imgURL: "/images/location-3.webp",
       name: "Chinedu Okafor",
       residence: "Abuja, FCT",
       comment:
@@ -44,7 +44,7 @@ export default function Testimonials() {
 
     {
       avatar: "images/client-4.webp",
-      imgURL: "/images/location-1.png",
+      imgURL: "/images/location-1.webp",
       name: "Emeka Adeyemi",
       residence: "Ikeja, Lagos",
       comment:

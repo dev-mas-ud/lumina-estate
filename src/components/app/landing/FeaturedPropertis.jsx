@@ -16,28 +16,28 @@ import { GeoAltFill } from "react-bootstrap-icons";
 export default function FeaturedProperties() {
   const features = [
     {
-      imgURL: "/images/featured-1.png",
+      imgURL: "/images/featured-1.webp",
       room: 4,
       sq: "1,300",
       price: "4,000,000",
       title: "Abuja, FCT",
     },
     {
-      imgURL: "/images/featured-2.png",
+      imgURL: "/images/featured-2.webp",
       room: 3,
       sq: "850",
       price: "3,300,000",
       title: "Ilorin, Kwara",
     },
     {
-      imgURL: "/images/featured-3.png",
+      imgURL: "/images/featured-3.webp",
       room: 6,
       sq: "3,300",
       price: "8,500,000",
       title: "Damaturu, Yobe",
     },
     {
-      imgURL: "/images/featured-1.png",
+      imgURL: "/images/featured-1.webp",
       room: 2,
       sq: "1,000",
       price: "3,700,000",

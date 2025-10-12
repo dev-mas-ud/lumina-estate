@@ -6,7 +6,6 @@ import {
   Drawer,
   Portal,
   useDisclosure,
-  Button,
   HStack,
 } from "@chakra-ui/react";
 import MobileMenu from "./MobileMenu";
@@ -15,6 +14,7 @@ import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import Brand from "../../Brand";
 import ExpandableSearch from "./ExpandableSearch";
+import SignUpForm from "../SignUpForm";
 
 export default function NavHeader() {
   return (
@@ -97,9 +97,7 @@ const RightContent = () => {
   return (
     <HStack gap={6} color={"primary"} id="desktop-header-btns" display={"none"}>
       <ExpandableSearch />
-      <Button as="a" href="/sign-up" size={"sm"} bg="primary">
-        Sign Up
-      </Button>
+      <SignUpForm />
     </HStack>
   );
 };

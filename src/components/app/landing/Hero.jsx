@@ -5,6 +5,8 @@ import {
   Heading,
   HStack,
   IconButton,
+  Menu,
+  Portal,
   Span,
   Stack,
   Text,
@@ -59,33 +61,80 @@ export default function Hero() {
         transform={"translate(-50%, -50%)"}
         shadow="lg"
       >
-        <Button
-          size={{ base: "xs", md: "sm" }}
-          px={{ base: 2, md: 5 }}
-          variant={"subtle"}
-          color={"primary"}
-        >
-          Location <BsGeoAltFill />
-        </Button>
-        <Button
-          size={{ base: "xs", md: "sm" }}
-          px={{ base: 2, md: 5 }}
-          variant={"subtle"}
-          color={"primary"}
-        >
-          Type <BiSolidHome />
-        </Button>
-        <Button
-          size={{ base: "xs", md: "sm" }}
-          px={{ base: 2, md: 5 }}
-          variant={"subtle"}
-          color={"primary"}
-        >
-          Price Range{" "}
-          <Span fontWeight={"bold"} fontSize={"md"}>
-            ₦
-          </Span>
-        </Button>
+        <Menu.Root>
+          <Menu.Trigger asChild>
+            <Button
+              size={{ base: "xs", md: "sm" }}
+              px={{ base: 2, md: 5 }}
+              variant={"subtle"}
+              color={"primary"}
+            >
+              Location <BsGeoAltFill />
+            </Button>
+          </Menu.Trigger>
+          <Portal>
+            <Menu.Positioner>
+              <Menu.Content>
+                <Menu.Item value="abuja">FCT, Abuja</Menu.Item>
+                <Menu.Item value="kaduna">Kaduna</Menu.Item>
+                <Menu.Item value="lagos">Lagos</Menu.Item>
+                <Menu.Item value="enugu">Enugu</Menu.Item>
+                <Menu.Item value="gombe">Gombe</Menu.Item>
+              </Menu.Content>
+            </Menu.Positioner>
+          </Portal>
+        </Menu.Root>
+
+        <Menu.Root>
+          <Menu.Trigger asChild>
+            <Button
+              size={{ base: "xs", md: "sm" }}
+              px={{ base: 2, md: 5 }}
+              variant={"subtle"}
+              color={"primary"}
+            >
+              Type <BiSolidHome />
+            </Button>
+          </Menu.Trigger>
+          <Portal>
+            <Menu.Positioner>
+              <Menu.Content>
+                <Menu.Item value="1bed">1 Bed Room</Menu.Item>
+                <Menu.Item value="2bed">2 Bed Room</Menu.Item>
+                <Menu.Item value="5bed">5 Bed Room</Menu.Item>
+                <Menu.Item value="7bed">7 Bed Room</Menu.Item>
+                <Menu.Item value="10bed">10 Bed Room</Menu.Item>
+              </Menu.Content>
+            </Menu.Positioner>
+          </Portal>
+        </Menu.Root>
+
+        <Menu.Root>
+          <Menu.Trigger asChild>
+            <Button
+              size={{ base: "xs", md: "sm" }}
+              px={{ base: 2, md: 5 }}
+              variant={"subtle"}
+              color={"primary"}
+            >
+              Price Range{" "}
+              <Span fontWeight={"bold"} fontSize={"md"}>
+                ₦
+              </Span>
+            </Button>
+          </Menu.Trigger>
+          <Portal>
+            <Menu.Positioner>
+              <Menu.Content>
+                <Menu.Item value="1mto2m">1M to 2M</Menu.Item>
+                <Menu.Item value="2mto5m">2M to 5M</Menu.Item>
+                <Menu.Item value="5mto10m">5M to 10M</Menu.Item>
+                <Menu.Item value="10mto15m">10M to 15M</Menu.Item>
+                <Menu.Item value="15mto20m">15M to 20M</Menu.Item>
+              </Menu.Content>
+            </Menu.Positioner>
+          </Portal>
+        </Menu.Root>
         <IconButton
           disabled
           aria-label="Search"
