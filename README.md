@@ -1,10 +1,10 @@
 # Lumina Estate - Real Estate Landing Page
 
-**Live Demo:** [https://lumina-estate.vercel.app/](https://lumina-estate.vercel.app/)
-
-![Lumina Estate Landing Page Screenshot](https://lumina-estate.vercel.app/screenshot.png)
+![Lumina Estate Landing Page Screenshot](https://lumina-estate.vercel.app/images/screenshot.png)
 
 A modern, responsive real-estate landing page built for a Nigerian client, designed to showcase properties and drive engagement with potential buyers. Built using **React**, **Next.js**, and **Tailwind CSS** for a fast and scalable user experience.
+
+**Live Demo:** [https://lumina-estate.vercel.app/](https://lumina-estate.vercel.app/)
 
 ---
 

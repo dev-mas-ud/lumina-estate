@@ -56,13 +56,13 @@ export default function GlobalMetaTags() {
         locale: "en_NG",
         images: [
           {
-            url: "https://lumina-estate.vercel.app/hero-img.png",
+            url: "https://lumina-estate.vercel.app/featured-1.png",
             width: 1200,
             height: 630,
             alt: "Lumina Properties Nigeria - Real Estate Listings",
           },
           {
-            url: "https://lumina-estate.vercel.app/hero-img.png",
+            url: "https://lumina-estate.vercel.app/featured-1.png",
             width: 2400,
             height: 1260,
             alt: "Lumina Properties Nigeria - Real Estate Listings",

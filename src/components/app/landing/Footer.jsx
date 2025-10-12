@@ -93,7 +93,7 @@ export default function Footer() {
           target="_blank"
           fontWeight={"semibold"}
           rel="noopener noreferrer"
-          href="https://websitesbymasud.vercel.app/"
+          href="https://devmasud.vercel.app/"
         >
           Masud
         </Link>
