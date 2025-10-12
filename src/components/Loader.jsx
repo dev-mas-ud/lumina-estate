@@ -4,7 +4,7 @@ import { FadeLoader, RiseLoader } from "react-spinners";
 export const Loader = (props) => {
   return (
     <Center as="div" height={{ base: "70vh", md: "60vh" }} overflow={"hidden"}>
-      <RiseLoader color={props.color || "#2B1B12"} size={props.size || 35} />
+      <RiseLoader color={props.color || "#2B1B12"} size={props.size || 10} />
     </Center>
   );
 };
@@ -24,7 +24,7 @@ export const FullPageLoader = (props) => {
       overflow={"hidden"}
       bg="white"
     >
-      <RiseLoader color={props.color || "#2B1B12"} size={props.size || 50} />
+      <RiseLoader color={props.color || "#2B1B12"} size={props.size || 15} />
     </Center>
   );
 };

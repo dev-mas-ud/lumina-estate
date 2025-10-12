@@ -47,6 +47,7 @@ export default function FeaturedProperties() {
 
   return (
     <Box
+      id="services"
       px={{ base: 3, md: 8, lg: 16 }}
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}

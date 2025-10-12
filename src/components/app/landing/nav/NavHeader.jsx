@@ -16,6 +16,7 @@ import { FaX } from "react-icons/fa6";
 import Brand from "../../Brand";
 import { BiSearch } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
+import ExpandableSearch from "./ExpandableSearch";
 
 export default function NavHeader() {
   return (
@@ -97,9 +98,8 @@ export function NavLinks() {
 const RightContent = () => {
   return (
     <HStack gap={6} color={"primary"} id="desktop-header-btns" display={"none"}>
-      <BiSearch size={24} style={{ marginTop: 3 }} />
-      <BsPerson size={25} />
-      <Button size={"sm"} bg="primary">
+      <ExpandableSearch />
+      <Button as="a" href="/sign-up" size={"sm"} bg="primary">
         Sign Up
       </Button>
     </HStack>

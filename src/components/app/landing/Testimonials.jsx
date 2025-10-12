@@ -179,6 +179,7 @@ export default function Testimonials() {
       </Container>
       <HStack gap={8} align={"center"} justify={"center"} mt={14} w="full">
         <IconButton
+          disabled
           size="lg"
           rounded="full"
           bg="primary"

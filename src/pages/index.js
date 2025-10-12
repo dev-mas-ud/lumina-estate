@@ -3,7 +3,7 @@ import FeaturedProperties from "@/components/app/landing/FeaturedPropertis";
 import Footer from "@/components/app/landing/Footer";
 import Hero from "@/components/app/landing/Hero";
 import NavHeader from "@/components/app/landing/nav/NavHeader";
-import Newsletter from "@/components/app/landing/Newsletter";
+import Contact from "@/components/app/landing/Contact";
 import Testimonials from "@/components/app/landing/Testimonials";
 import WhyUs from "@/components/app/landing/WhyUs";
 
@@ -16,7 +16,7 @@ export default function App() {
       <WhyUs />
       <FeaturedProperties />
       <Testimonials />
-      <Newsletter />
+      <Contact />
       <Footer />
     </>
   );

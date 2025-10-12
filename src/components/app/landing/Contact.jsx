@@ -10,11 +10,30 @@ import {
 } from "@chakra-ui/react";
 import H2Heading from "./H2Heading";
 import { Chat, Envelope, QuestionCircle, Send } from "react-bootstrap-icons";
+import { useState } from "react";
 
-export default function Newsletter() {
+export default function Contact() {
+  const [email, setEmail] = useState("");
+
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (email) {
+      alert("Thanks for subscribing to our newsletter!");
+      setEmail("");
+      return;
+    } else {
+      alert("Email address is required");
+      return;
+    }
+  };
   return (
     <Box
-      id="newsletter"
+      id="contact"
       py={{ base: 16, md: 20 }}
       pt={{ base: 10, md: 20 }}
       px={{ base: 8, md: 10 }}
@@ -40,11 +59,25 @@ export default function Newsletter() {
           </HStack>
         </Stack>
       </Container>
-      <HStack gap={5} align={"center"} justify={"center"} mt={2} w="full">
+      <HStack
+        as="form"
+        onSubmit={handleFormSubmit}
+        gap={5}
+        align={"center"}
+        justify={"center"}
+        mt={2}
+        w="full"
+      >
         <InputGroup w="20rem" startElement={<Envelope />}>
-          <Input type="email" size="lg" placeholder="Enter your email adress" />
+          <Input
+            onChange={handleInputChange}
+            value={email}
+            type="email"
+            size="lg"
+            placeholder="Enter your email adress"
+          />
         </InputGroup>
-        <Button bg="primary" size="md">
+        <Button bg="primary" type="submit" size="md">
           <Send /> Submit
         </Button>
       </HStack>

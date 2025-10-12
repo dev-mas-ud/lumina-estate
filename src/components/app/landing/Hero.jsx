@@ -87,6 +87,7 @@ export default function Hero() {
           </Span>
         </Button>
         <IconButton
+          disabled
           aria-label="Search"
           ml={{ base: 0, md: 2 }}
           bg="primary"
@@ -109,7 +110,14 @@ const LeftContent = () => {
         Explore our handpicked collection of exceptional properties,
         thoughtfully designed to match your vision of the perfect home.
       </Text>
-      <Button bg={"primary"} size="xl" w={{ base: "full", md: "12rem" }}>
+      <Button
+        as="a"
+        href="#contact"
+        aria-label="Get started"
+        bg={"primary"}
+        size="xl"
+        w={{ base: "full", md: "12rem" }}
+      >
         Get Started <LuArrowBigRight />
       </Button>
     </Stack>
