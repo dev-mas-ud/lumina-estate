@@ -4,17 +4,17 @@ const config = defineConfig({
   theme: {
     tokens: {
       colors: {
-        primary: { value: "#2B1B12" }, // Neon Byte – CTAs, highlights, accents
-        secondary: { value: "#DDC7BB" }, // Terminal Depth – dark sections / backgrounds
-        baseLight: { value: "#FBF5F1" }, // Soft Light – light sections / cards
+        primary: { value: "#2B1B12" },
+        secondary: { value: "#DDC7BB" },
+        baseLight: { value: "#FBF5F1" },
       },
     },
   },
   config: {
-    cssVarsRoot: ":root", // keep variables at root
-    initialColorMode: "light", // always start in light mode
-    useSystemColorMode: false, // ignore system preference
-    disableTransitionOnChange: true, // smoother startup
+    cssVarsRoot: ":root",
+    initialColorMode: "light",
+    useSystemColorMode: false,
+    disableTransitionOnChange: true,
   },
 });
 

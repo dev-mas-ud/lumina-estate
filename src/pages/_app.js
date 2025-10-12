@@ -7,7 +7,6 @@ import { FullPageLoader } from "@/components/Loader";
 import { useRouteChangeHandler } from "hooks/useRouteChangeHandler";
 import GlobalMetaTags from "@/components/app/GlobalMetaTags";
 import Head from "next/head";
-import { Analytics } from "@vercel/analytics/next";
 import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
@@ -47,89 +46,18 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="twitter:creator" content="@devmasud" />
         <meta
           name="twitter:title"
-          content="Websites by Masud - Affordable Web Design & Development in Nigeria"
+          content="Lumina Properties Nigeria - Buy, Sell & Rent Real Estate"
         />
         <meta
           name="twitter:description"
-          content="Websites by Masud helps Nigerian businesses grow online with modern, mobile-friendly, and affordable websites."
+          content="Discover houses, apartments, lands, and commercial real estate across Nigeria. Buy, sell, or rent with confidence through Lumina Properties Nigeria."
         />
         <meta
           name="twitter:image"
-          content="https://bytedesign.com.ng/images/me.jpg"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": ["Organization", "LocalBusiness"],
-              "@id": "https://bytedesign.com.ng/#organization",
-              name: "ByteDesign",
-              url: "https://bytedesign.com.ng",
-              image: "https://bytedesign.com.ng/images/me.jpg",
-              description:
-                "Websites by Masud creates affordable, mobile-friendly websites and web apps for Nigerian businesses.",
-              telephone: "+2347065656558",
-              email: "contact@bytedesign.com.ng",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "12 Allen Avenue", // update with real
-                addressLocality: "Ikeja",
-                addressRegion: "Lagos",
-                postalCode: "100001",
-                addressCountry: "NG",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 6.6018, // update with your coordinates
-                longitude: 3.3515,
-              },
-              openingHoursSpecification: [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                  ],
-                  opens: "09:00",
-                  closes: "18:00",
-                },
-              ],
-              sameAs: [
-                "https://twitter.com/devmasud",
-                "https://web.facebook.com/profile.php?id=61581299132973",
-                "https://www.instagram.com/dev__masud",
-                "https://www.linkedin.com/in/dev-masud",
-              ],
-              areaServed: [
-                {
-                  "@type": "Place",
-                  name: "Nigeria",
-                },
-                {
-                  "@type": "Place",
-                  name: "Lagos",
-                },
-                {
-                  "@type": "Place",
-                  name: "Abuja",
-                },
-              ],
-              serviceType: [
-                "Web Design",
-                "Web Development",
-                "Landing Pages",
-                "Custom Web Apps",
-              ],
-            }),
-          }}
+          content="https://lumina-estate.vercel.app/featured-1.png"
         />
       </Head>
       {renderContent()}
-      <Analytics />
     </Provider>
   );
 }

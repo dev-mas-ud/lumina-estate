@@ -14,8 +14,6 @@ import DesktopLinks from "./DesktopLinks";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import Brand from "../../Brand";
-import { BiSearch } from "react-icons/bi";
-import { BsPerson } from "react-icons/bs";
 import ExpandableSearch from "./ExpandableSearch";
 
 export default function NavHeader() {

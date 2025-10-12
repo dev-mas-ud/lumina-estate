@@ -139,7 +139,7 @@ const RightContent = () => {
     >
       <Image
         src="/images/hero-img.webp"
-        alt="Affordable, modern, and mobile-friendly web design in Nigeria by ByteDesign — helping businesses grow online with fast websites and custom web apps."
+        alt="hero image"
         fill
         priority
         sizes="(max-width: 768px) 100vw, 
