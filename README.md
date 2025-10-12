@@ -53,4 +53,5 @@ Many real estate businesses in Nigeria struggle with outdated websites that are 
 git clone https://github.com/dev-mas-ud/lumina-estate.git
 cd lumina-estate
 npm install
+npm run dev
 ```
