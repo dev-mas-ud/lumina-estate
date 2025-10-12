@@ -39,6 +39,7 @@ Many real estate businesses in Nigeria struggle with outdated websites that are 
 
 - **React** - Component-based architecture for reusability
 - **Next.js** - Server-side rendering and optimized routing
+- **Chakra UI** - React-based UI library for reusable components
 - **Tailwind CSS** - Utility-first CSS framework for fast styling
 - **Vercel** - Deployment and hosting
 
